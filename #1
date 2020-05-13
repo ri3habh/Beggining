@@ -1,0 +1,54 @@
+print("Welcome to NBA My Player")
+name = input("To begin, what is your name?")
+weight = int(input("Please enter your player's weight(in lbs). Note, this will impact what position you play at, and will affect gameplay."))
+height = int(input("Please also enter your player's height (in cm). Note, this also impacts gameplay."))
+while type(weight) == int and type(height)== int:
+    if height <= 190:
+        if weight < 175:
+            print("You have chosen a lightweight Point Guard!")
+            build = "PG"
+            print("Your primary job is to facilitate scoring opportunities for your team, or sometimes for yourselves.")
+        else:
+            print("You have chosen a heavyweight Point Guard!")
+            build = "PG"
+            print("Your primary job is to facilitate scoring opportunities for your team, or sometimes for yourselves.")
+    elif height > 191 and height < 200:
+        if weight < 195:
+            print("You have chosen a lightweight Shooting Guard!")
+            build = "SG"
+            print("A shooting guard's main objective is to score points for their team and steal the ball on defense.")
+        else:
+            print("You have chosen a heavyweight Shooting Guard!")
+            build = "SG"
+            print("A shooting guard's main objective is to score points for their team and steal the ball on defense.")
+    elif height > 201 and height < 210:
+        if weight < 225:
+            print("You have chosen a lightweight Small Forward")
+            build = "SF"
+            print("Small forwards are responsible for scoring points, defending and often as secondary or tertiary rebounders behind the power forward and center, although a few have considerable passing responsibilities.")
+        else:
+            print("You have chosen a heavyweight Small Forward")
+            build = "SF"
+            print("Small forwards are responsible for scoring points, defending and often as secondary or tertiary rebounders behind the power forward and center, although a few have considerable passing responsibilities.")
+    elif height > 211 and height < 215:
+        if weight < 230:
+            print("You have chosen a lightweight Power Forward")
+            build = "PF"
+            print("They play close to the basket, fighting for rebounds and posting up on offense.")
+        else:
+            print("You have chosen a heavyweight Power Forward")
+            build = "PF"
+            print("They play close to the basket, fighting for rebounds and posting up on offense.")
+    else:
+        if weight < 250:
+            print("You have chosen a lightweight Center")
+            build = "C"
+            print("Defensively, the two main responsibilites of a center is to defend the basket and rebound the basketball. Offensively, Centers are good in the paint")
+        else:
+            print("You have chosen a heavyweight Center")
+            build = "C"
+            print("Defensively, the two main responsibilites of a center is to defend the basket and rebound the basketball. Offensively, Centers are good in the paint")
+else:
+    print("Sorry, just type the numerical values")
+    weight = int(input("Please enter your player's weight(in lbs). Note, this will impact what position you play at, and will affect gameplay."))
+    height = int(input("Please also enter your player's height (in cm). Note, this also impacts gameplay."))
